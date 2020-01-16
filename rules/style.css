@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: #0d0d0d;
+}
+
+.top-content {
+    background-color: black;
+    background-image: url(https://www.sawroom.bg/email/john.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px black;
+}
+
+.title {
+    font-size: 24px;
+    padding-top: 20px;
+    background: black;
+    position: relative;
+    z-index: 1001;
+    text-align: right;
+}
+
+.title span {
+    background-color: black;
+    position: relative;
+    z-index: 2003;
+    padding: 0 7px;
+}
+
+.title hr {
+    height: 1px;
+    background: transparent;
+    color: transparent;
+    border-top: 4px solid red;
+    position: absolute;
+    width: 100%;
+    top: 26px;
+    z-index: 1000;
+}
+
+.title .logo {
+    background-image: url('https://www.sawroom.bg/email/logo.png');
+    background-size: 38px 38px;
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 48px;
+    content: ".";
+    color: black;
+    text-indent: 9999px;
+    font-size: 25px;
+    line-height: 38px;
+    display: inline-block;
+}
+
+.main-content {
+    box-sizing: border-box;
+    margin-top: 70px;
+    padding: 0 10%;
+    font-size: 18px;
+}
+
+h1 {
+    word-spacing: 9999px;
+    line-height: 35px;
+    position: relative;
+    font-size: 27px;
+}
+
+h1:after {
+    content: ".";
+    text-indent: -9999px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 70px;
+    border-top: 4px solid #be0000;
+}

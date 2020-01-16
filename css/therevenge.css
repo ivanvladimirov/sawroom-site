@@ -1,0 +1,337 @@
+/* Room */
+
+body {
+    background-color: #101010 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0px 0px 5px black;
+    margin: 0;
+}
+
+h6 {font-size: 13px; font-style: italic; color: #be0000; letter-spacing: 0.01em; font-weight: normal;}
+
+main.title {
+    height: 540px;
+    background-image: url(../img/pig.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+main.title .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+main.title .container .roomdetails {
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: #929292;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+main.title .container .roomdetails .difficultylevel {
+    background-image: url(../img/4of5.png);
+    background-size: 100px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    line-height: 30px;
+    margin: 0 9px;
+}
+
+main.title .container .roomdetails h4 {
+    height: 25px !important;
+    line-height: 29px;
+}
+
+main.title .container .roomdetails i {
+    text-shadow: none;
+    font-size: 25px;
+    margin-left: 35px;
+    margin-right: 5px;
+}
+
+main.title .container h1 {
+    display: block;
+}
+
+hr.separator {
+    border: 0;
+    border-top: 1px solid #2c2c2c;
+    width: 100%;
+    z-index: 1;
+}
+
+main.basic .container {
+    margin-top: 25px;
+}
+
+main.basic .container h6 {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+main.basic .container .about {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+main.basic .container .about .primary-info {
+    border-right: 1px solid #2c2c2c;
+    padding-right: 55px;
+}
+
+main.basic .container .about .primary-info .desc {
+    color: #848484;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 14px;
+    line-height: 25px;
+}
+
+main.basic .container .about .secondary-info {
+    min-width: 450px;
+    padding-left: 55px;
+}
+
+main.basic .container .about .secondary-info #map {
+    height: 160px;
+    display: block;
+    width: 100%;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+main.basic .container .about .secondary-info ul {
+    margin-top: 20px;
+    padding: 0;
+}
+
+main.basic .container .about .secondary-info ul li {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 7px;
+}
+
+/* Reservation */
+
+main.basic .container .reservation {
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+main.basic .container .table {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+main.basic .container .table .day {
+	width: 130px;
+	height: 100%;
+	display: inline-block;
+	margin-right: 15px;
+    text-shadow: 0px 1px 1px black;
+    vertical-align: middle;
+}
+
+main.basic .container .table .day .heading {
+	text-transform: uppercase;
+	color: #f2f2f2;
+	letter-spacing: 0.04em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+main.basic .container .table .day .date {
+	overflow: hidden;
+	color: #666666;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+main.basic .container .table .day .date:before, main .container .table .day .date:after {
+    background-color: #666666;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 14%;
+    margin: 0 4px;
+}
+
+main.basic .container .table .day .hours a {
+	color: white;
+	display: block;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    text-decoration: none;
+	width: 100px;
+	margin-bottom: 4px;
+}
+
+main.basic .container .table .day .hours a.booked {
+	color: #7a1b1b;
+	/*border: 1px solid #7a1b1b;*/
+}
+
+main.basic .container .table .day .hours a.booked:hover {
+	text-decoration: underline;
+	cursor: not-allowed;
+}
+
+main.basic .container .table .day .hours a.free {
+	color: white;
+	/*border: 1px solid white;*/
+}
+
+main.basic .container .table .day .hours a.free:hover {
+	text-decoration: underline;
+}
+
+main.basic .container .table a.arrow {
+	display: inline-block;
+	font-size: 16px;
+	color: white;
+	width: 20px;
+	margin-left: -4px;
+    margin-right: 15px;
+}
+
+main.basic .container .table a.arrow i {
+    font-size: 45px;
+    line-height: 40px;
+    color: white;
+    transition: 0.3s;
+}
+
+main.basic .container .table a.arrow:hover i {
+    color: #be0000;
+    transition: 0.3s;
+}
+
+main.basic .container .table .pastb {
+    color: #424242 !important;
+}
+
+/* Prices */
+
+main.basic .container .pricetable {
+    margin-top: -30px;
+}
+
+main.basic .container .pricetable .firstpart {
+    float: left;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+
+main.basic .container .pricetable .firstpart .pricefrom {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 35px;
+}
+
+main.basic .container .pricetable .firstpart .pricefrom .big {
+    font-size: 20px;
+    color: #be0000;
+    font-style: normal;
+}
+
+main.basic .container .pricetable .firstpart .star {
+    color: #be0000;
+}
+
+main.basic .container .pricetable .firstpart .afterstar {
+    font-style: italic;
+    font-family: 'Lora', serif;
+    color: #666666;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+main.basic .container .pricetable .price:nth-of-type(2) {background-image: url('../img/bloodsplat1.png'); width: 190px;}
+main.basic .container .pricetable .price:nth-of-type(3) {background-image: url('../img/bloodsplat2.png'); background-size: 280px; margin-left: -35px; width: 210px;}
+main.basic .container .pricetable .price:nth-of-type(4) {background-image: url('../img/bloodsplat3.png'); margin-left: -20px; width: 194px;}
+main.basic .container .pricetable .price:nth-of-type(5) {background-image: url('../img/bloodsplat4.png'); width: 193px; margin-left: -15px;}
+
+
+main.basic .container .pricetable .price {
+    height: 250px;
+    display: inline-block;
+    background-size: 235px 329px;
+    background-repeat: no-repeat;
+    padding-top: 130px;
+    padding-left: 44px;
+}
+
+main.basic .container .pricetable .price .people3,
+main.basic .container .pricetable .price .people4,
+main.basic .container .pricetable .price .people5,
+main.basic .container .pricetable .price .people6 {
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    line-height: 0;
+    float: left;
+}
+
+main.basic .container .pricetable .price .people3:before {background-image: url('../img/people3.png'); background-size: 51px 28px; width: 51px; height: 25px;}
+main.basic .container .pricetable .price .people4:before {background-image: url('../img/people4.png'); background-size: 66px 28px; width: 66px; height: 25px;}
+main.basic .container .pricetable .price .people5:before {background-image: url('../img/people5.png'); background-size: 51px 47px; width: 51px; height: 47px; margin-top: -10px !important;}
+main.basic .container .pricetable .price .people6:before {background-image: url('../img/people6.png'); background-size: 51px 47px; width: 51px; height: 46px; margin-top: -10px !important;}
+
+main.basic .container .pricetable .price .people3:before,
+main.basic .container .pricetable .price .people4:before,
+main.basic .container .pricetable .price .people5:before,
+main.basic .container .pricetable .price .people6:before {
+    content:"";
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 3px;
+}
+
+main.basic .container .pricetable .price .money1,
+main.basic .container .pricetable .price .money2,
+main.basic .container .pricetable .price .money3 {
+    height: 40px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+    font-family: 'Lora', serif;
+}
+
+main.basic .container .pricetable .price .money1:after,
+main.basic .container .pricetable .price .money2:after,
+main.basic .container .pricetable .price .money3:after {
+    font-size: 12px;
+    color: #642323;
+    display: block;
+    text-align: center;
+    margin-top: -5px;
+}
+
+main.basic .container .pricetable .price .money1:after {content: "по 30 на човек";}
+main.basic .container .pricetable .price .money2:after {content: "по 27 на човек";}
+main.basic .container .pricetable .price .money3:after {content: "по 25 на човек";}

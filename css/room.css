@@ -1,0 +1,914 @@
+/* Room */
+/* To Do: Add Roboto */
+
+body {
+    background-color: #101010 !important;
+    counter-reset: counter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0px 0px 5px black;
+    margin: 0;
+}
+
+h6 {font-size: 13px; font-style: italic; color: #be0000; letter-spacing: 0.01em; font-weight: normal;}
+
+.bold {
+    font-weight: bold;
+    color: white;
+}
+
+main.textsOnly {
+    height: 300px;
+}
+
+main.textsOnly .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+main.title {
+    height: 540px;
+    background-repeat: no-repeat;
+    background-size: 1920px 600px;
+    background-position: center center;
+    width: 100%;
+}
+
+main.title .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+main.title .container .ageRestriction {
+    border-radius: 50%;
+    font-size: 24px;
+    background: #be0000;
+    padding: 6px;
+    margin-left: 5px;
+}
+
+main.title .container .roomdetails {
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: #929292;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+main.title .container .roomdetails span .difficultylevel {
+    background-image: url(../img/4of5.png);
+    background-size: 100px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    line-height: 30px;
+    margin: 0 9px;
+}
+
+main.title .container .roomdetails span h4 {
+    height: 25px !important;
+    line-height: 29px;
+}
+
+main.title .container .roomdetails span i {
+    text-shadow: none;
+    font-size: 25px;
+    margin-left: 35px;
+    margin-right: 5px;
+}
+
+main.title .container h1 {
+    display: block;
+}
+
+hr.separator {
+    border: 0;
+    border-top: 1px solid #2c2c2c;
+    width: 100%;
+    z-index: 1;
+}
+
+main.basic .container {
+    margin-top: 25px;
+}
+
+main.basic .container ul.texts {
+    padding-left: 0;
+}
+
+main.basic .container ul.texts li {
+    font-size: 16px;
+    margin: 15px 0;
+    margin-top: 35px;
+}
+
+main.basic .container ul.texts li::before {content: "• "; color: red;}
+
+main.basic .container ul.texts div,
+main.basic .container ul.texts li {
+    letter-spacing: -0.02em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+main.basic .container ul.texts div {
+    margin-left: 25px;
+    color: #848484;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+main.basic .container h6 {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+main.basic .container .about {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+main.basic .container .about .primary-info {
+    border-right: 1px solid #2c2c2c;
+    padding-right: 55px;
+}
+
+main.basic .container .about .primary-info .desc {
+    color: #848484;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 14px;
+    line-height: 25px;
+}
+
+main.basic .container .about .secondary-info {
+    min-width: 450px;
+    padding-left: 55px;
+}
+
+main.basic .container .about .secondary-info #map {
+    height: 160px;
+    display: block;
+    width: 100%;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+main.basic .container .about .secondary-info ul {
+    margin-top: 20px;
+    padding: 0;
+}
+
+main.basic .container .about .secondary-info ul li {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 7px;
+}
+
+main.basic .container .about .secondary-info ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Field */
+
+main.basic .container .field {
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+main.basic .container .field .desc {
+    display: flex;
+    color: #848484;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 14px;
+    line-height: 25px;
+}
+
+main.basic .container .field .desc div.terms-before-playing-image {
+    background-image: url('../img/rules.png');
+    background-repeat: no-repeat;
+    background-size: 441px 372px;
+    width: 441px;
+    height: 372px;
+    flex-shrink: 0;
+}
+
+main.basic .container .field .desc div.terms-before-playing {
+    padding-left: 40px;
+    margin: auto;
+}
+
+main.basic .container .field .desc div.terms-before-playing div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main.basic .container .field .desc div.terms-before-playing div .button {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+}
+
+main.basic .container .field .desc div.terms-before-playing div .button .left {
+    background: transparent;
+    border: 1px solid #be0000;
+    border-radius: 4px 0px 0px 4px;
+    box-sizing: border-box;
+    padding: 4px 6px;
+}
+
+main.basic .container .field .desc div.terms-before-playing div .button .right {
+    background: transparent;
+    border: 1px solid #be0000;
+    border-radius: 0px 4px 4px 0px;
+    box-sizing: border-box;
+    padding: 4px 6px;
+}
+
+main.basic .container .field .desc div.terms-before-playing div .button .selected {
+    background: #be0000;
+}
+
+main.basic .container .field .desc ul {
+    padding: 0;
+    margin: 0;
+}
+
+main.basic .container .field .desc ul li {
+    color: white;
+}
+
+main.basic .container .field .desc ul li::before {
+    counter-increment: counter;
+    content: counter(counter) ". ";
+    color: #be0000;
+}
+
+main.basic .container .field .desc ul li p {
+    margin-left: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: #848484;
+    line-height: 20px;
+}
+
+main.basic .container .field .desc:nth-child(3) {
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+main.basic .container .field .desc ol li {
+    list-style-type: disc;
+}
+
+main.basic .container .field .desc .icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+main.basic .container .field .desc .icons div {
+    text-align: center;
+    flex-basis: 180px;
+}
+
+main.basic .container .field .hex-holder {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Hexagon */
+
+.hexagon {
+    background-image: url(../img/hexagons/rude.png);
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Reservation */
+
+main.basic .container .reservation {
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+main.basic .container .calendar {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+main.basic .container .calendar .day {
+	width: 130px;
+	height: 100%;
+	display: inline-block;
+	margin-right: 15px;
+    text-shadow: 0px 1px 1px black;
+    vertical-align: top;
+}
+
+main.basic .container .calendar .day .weekDay {
+	text-transform: uppercase;
+	color: #f2f2f2;
+	letter-spacing: 0.04em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+main.basic .container .calendar .day .date {
+	overflow: hidden;
+	color: #666666;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+main.basic .container .calendar .day .date:before, main .container .calendar .day .date:after {
+    background-color: #666666;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 14%;
+    margin: 0 4px;
+}
+
+main.basic .container .calendar .day .hours div {
+	color: white;
+	display: block;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    text-decoration: none;
+	width: 100px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+main.basic .container .calendar .day .hours div.booked {
+	color: #7a1b1b !important;
+	/* border: 1px solid #7a1b1b !important; */
+}
+
+main.basic .container .calendar .day .hours div.booked:hover {
+	text-decoration: underline;
+	cursor: not-allowed;
+}
+
+main.basic .container .calendar .day .hours div.hour {
+	color: white;
+	/* border: 1px solid white; */
+}
+
+main.basic .container .calendar .day .hours div.hour:hover {
+	text-decoration: underline;
+}
+
+main.basic .container .calendar .arrow {
+	display: inline-block;
+	font-size: 16px;
+	color: white;
+	width: 20px;
+	margin-left: -4px;
+    margin-right: 15px;
+    transform: translateY(100%);
+    cursor: pointer;
+}
+
+main.basic .container .calendar .arrow i {
+    font-size: 45px;
+    line-height: 40px;
+    color: white;
+    transition: 0.3s;
+}
+
+main.basic .container .calendar .arrow:hover i {
+    color: #be0000;
+    transition: 0.3s;
+}
+
+main.basic .container .calendar div.passed {
+    color: #424242 !important;
+    /* border: 1px solid #424242 !important; */
+}
+
+.error {
+    display: none;
+}
+
+.success {
+    display: block;
+    color: greenyellow;
+}
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background: rgba(0,0,0,0.9);
+    transition: all 0.3s;
+    justify-content: center;
+    align-items: center;
+    animation: opacity 0.3s;
+}
+
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.modal .modalContainer {
+    max-width: 575px;
+    max-height: 450px;
+    background-color: #101010;
+    padding: 30px 45px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #be0000;
+    box-shadow: 0px 0px 15px 2px black;
+    position: relative;
+    z-index: 11;
+    animation: move 0.4s ease-in-out;
+}
+
+@keyframes move {
+    0% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+}
+
+.modal .modalContainer .closeButton {
+    border: 1px solid #be0000;
+    position: absolute;
+    background-color: #101010;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding-left: 2px;
+    box-sizing: border-box;
+    line-height: 29px;
+    cursor: pointer;
+
+}
+
+.modal .modalContainer .heading {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    font-size: 17px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #2d2d2d;
+    padding-bottom: 5px;
+    width: 85%;
+}
+
+.modal .modalContainer .half {
+    display: inline-block;
+    width: 49%;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: top;
+}
+
+.modal .modalContainer .half input,
+.modal .modalContainer .half select{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    width: 155px;
+    height: 30px;
+    background-color: #d3d3d3;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    color: black;
+}
+
+.modal .modalContainer .half .textField {
+    padding-left: 21px;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip .tooltipText {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -55px;
+    max-width: 200px;
+    width: 232px;
+    background: rgb(56, 56, 56);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 7px;
+    box-sizing: border-box;
+    left: 0%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+
+.tooltip:hover .tooltipText {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+}
+
+.modal .modalContainer #form-messages {
+    font-size: 13px;
+    color: white;
+    display: none !important;
+}
+
+.modal .modalContainer .checkboxText {
+    font-size: 13px;
+    height: 28px;
+    float: right;
+    line-height: 28px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.modal .modalContainer .checkboxText a { 
+    color: white;
+}
+
+.modal .modalContainer button {
+    width: 88px;
+    height: 28px;
+    background: #be0000;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    outline: 0;
+    margin-top: 5px;
+    line-height: 27px;
+    float: right;
+}
+
+.modal .chopper {
+    background-image: url('../img/chopper.png');
+    background-size: 600px 600px;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    animation: chopper 0.3s ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    right: 15%; 
+    transform: rotate(-360deg);
+}
+
+@keyframes chopper {
+    0% {right: -600px; transform: rotate(20deg)}
+    100% {transform: rotate(-360deg);}
+}
+
+/* Prices */
+
+main.basic .container .pricetable {
+    margin-top: -35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main.basic .container .pricetable .firstpart {
+    float: left;
+    margin-top: 60px;
+}
+
+
+main.basic .container .pricetable .firstpart .pricefrom {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 35px;
+}
+
+main.basic .container .pricetable .firstpart .pricefrom .big {
+    font-size: 20px;
+    color: #be0000;
+    font-style: normal;
+}
+
+main.basic .container .pricetable .firstpart .star {
+    color: #be0000;
+}
+
+main.basic .container .pricetable .firstpart .afterstar {
+    font-style: italic;
+    font-family: 'Lora', serif;
+    color: #666666;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+main.basic .container .pricetable .priceItem {
+    display: flex;
+    width: 190px;
+    height: 330px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 190px 330px;
+}
+
+main.basic .container .pricetable .priceItem:nth-of-type(2) {background-image: url(../img/bloodsplat1.png);}
+main.basic .container .pricetable .priceItem:nth-of-type(3) {background-image: url(../img/bloodsplat2.png);}
+main.basic .container .pricetable .priceItem:nth-of-type(4) {background-image: url(../img/bloodsplat3.png);}
+main.basic .container .pricetable .priceItem:nth-of-type(5) {background-image: url(../img/bloodsplat4.png);}
+main.basic .container .pricetable .priceItem:nth-of-type(6) {background-image: url(../img/bloodsplat2.png);}
+
+main.basic .container .pricetable .priceItem .people {
+    justify-content: center;
+    display: flex;
+    margin-right: 5px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+main.basic .container .pricetable .priceItem .people span img {
+    max-width: 15px;
+    height: auto;
+}
+
+main.basic .container .pricetable .priceItem .people span {
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+}
+
+main.basic .container .pricetable .priceItem .people div {
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    line-height: 0;
+    margin-top: 2px;
+}
+
+main.basic .container .pricetable .priceItem .money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main.basic .container .pricetable .priceItem .money .price-tag {
+    font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+    font-family: 'Lora', serif;
+}
+
+main.basic .container .pricetable .priceItem .money .per-person {
+    font-size: 12px;
+    color: #531d1d;
+    display: block;
+    text-align: center;
+    margin-top: -5px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+footer {
+    background: transparent;
+}
+
+/* Media Queries */
+@media all and (max-width: 1280px) {
+    h1 {font-size: 30px;}
+    h2 {font-size: 22px;}
+    h4 {font-size: 14px;}
+    
+    main.title {
+        height: 420px;
+        background-size: 1600px auto;
+        background-position: top center;
+    }
+
+    main.basic .container .about .primary-info .desc {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    main.title, main.basic {
+        box-sizing: border-box;
+    }
+
+    main.title .container .roomdetails {
+        margin-bottom: 40px;
+    }
+
+    header {
+        box-sizing: border-box;
+    }
+
+    main.basic .container .about {
+        flex-wrap: wrap;
+    }
+
+    main.basic .container .about .primary-info {
+        border-right: 0;
+        padding-right: 0px;
+    }
+
+    main.basic .container .about .secondary-info {
+        padding-left: 0px;
+    }
+
+    main.basic .container .field .desc {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main.basic .container .field .desc div.terms-before-playing-image {
+        background-size: 100%;
+        max-width: 441px;
+        max-height: 372px;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    main.basic .container .field .desc .icons {
+        flex-wrap: wrap;
+    }
+
+    main.basic .container .field .desc .icons div {
+        margin-top: 10px;
+        flex-basis: 140px;
+    }
+
+    main.basic .container .field .desc .icons div .icon img {
+        width: 90px;
+    }
+
+    main.basic .container .field .desc .icons div .iconText {
+        font-size: 13px;
+    }
+
+    main.title {
+        background-size: 1500px auto;
+    }
+
+    main.title .container .roomdetails {
+        flex-wrap: wrap;
+        align-items: initial;
+        justify-content: center;
+    }
+
+    main.title .container .roomdetails span:first-child {
+        display: none;
+    }
+
+    main.title .container .roomdetails span:nth-child(2) {
+        margin-right: 10px;
+    }
+
+    main.title .container .roomdetails span i {
+        margin-left: 0px;
+    }
+
+    h1 {font-size: 26px; text-align: center;}
+    hr.separator {display: none;}
+
+    main.basic .container .field .desc div:last-child {
+        padding: 0;
+    }
+
+    /* Calendar */
+    main.basic .container .reservation {position: relative;}
+    main.basic .container .calendar {display: flex;flex-direction: column;}
+
+    main.basic .container .calendar .day {width: 100%; text-align: left}
+
+    main.basic .container .calendar .day .weekDay {
+        height: 30px;
+        line-height: 30px;
+        background-color: #1b1b1b; 
+        margin-bottom: 0px;
+        padding: 0 5px;
+        margin-top: 15px;
+    }
+
+    main.basic .container .calendar .day .date::before, main .container .calendar .day .date{background-color: #1b1b1b; padding: 5px;padding-top: 0px;}
+    main.basic .container .calendar .day .date {margin-bottom: 15px;}
+    main.basic .container .calendar .day .date::before, main .container .calendar .day .date::after {content: initial;}
+    main.basic .container .calendar .day .hours div {display: inline-block; width: 70px; text-align: center; border-radius: 20px; height: 30px;}
+    main.basic .container .calendar .day .hours div.booked {
+        color: #7a1b1b !important;
+        border: 1px solid #7a1b1b !important;
+    }
+    main.basic .container .calendar .day .hours div.hour {
+        color: white;
+        border: 1px solid white;
+    }
+    main.basic .container .calendar .day .hours div.passed {
+        color: #424242 !important;
+        border: 1px solid #424242 !important;
+    }
+
+    main.basic .container .calendar .arrow {
+        position: absolute;
+        margin: 0 auto;
+        transform: translateY(0%);
+        top: -30px;
+    }
+    main.basic .container .calendar .prevWeek:after {
+        content: "Назад";
+        position: absolute;
+        top: 13px;
+        font-size: 13px;
+        margin-left: 2px;
+    }
+    main.basic .container .calendar .nextWeek {
+        right: 0;
+        
+    }
+    main.basic .container .calendar .nextWeek:after {
+        content: "Напред";
+        position: absolute;
+        top: 13px;
+        font-size: 13px;
+        left: -50px;
+        margin-left: 2px;
+    }
+    main.basic .container .calendar .arrow:nth-child(1) {
+        margin-left: 0px;
+    }
+    main.basic .container .calendar .arrow:nth-child(1):before {
+        content: "Назад";
+        position: absolute;
+        left: 20px;
+        font-size: 13px;
+        top: 13px;
+    }
+
+    main.basic .container .calendar .arrow:nth-child(3n) {
+        right: 0px;
+    }
+    main.basic .container .calendar .arrow:nth-child(3n):before {
+        content: "Напред";
+        position: absolute;
+        left: -50px;
+        font-size: 13px;
+        top: 13px;
+    }
+    main.basic .container .calendar .arrow i {font-size: 25px;}
+    main.basic .container .pricetable {flex-wrap: wrap;}
+    main.basic .container .pricetable .priceItem {
+        margin-top: -70px;
+        margin-bottom: -70px;
+    }
+    main.basic .container .pricetable .firstpart {width: 100%; text-align: left;}
+    main.basic .container .about .secondary-info {width: 100%; min-width: 100px;}
+    
+    /* Booking */
+    .modal .modalContainer {max-height: 90%;padding: 30px 20px;overflow:scroll;width: 90%;}
+    .modal .modalContainer .closeButton {top: 0;right: 0; border: 0;}
+    .modal .modalContainer .heading {width: 100%;font-size:13px;}
+    .modal .modalContainer .half .textField {padding-left: 0px;}
+    .modal .modalContainer .half input, .modal .modalContainer .half select {width: 90%;margin-left:0px;margin-right:0px; height:25px;}
+    .modal .modalContainer .half {font-size: 11px;}
+    .modal .modalContainer button {width: 100%;height: 31px;float: initial; width: 95%;}
+    .modal .chopper {display:none;}
+}
